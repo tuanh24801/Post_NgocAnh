@@ -1,0 +1,33 @@
+<div class="container p-5">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top navhead">
+        <div class="container p-4 header">
+          <a class="navbar-brand header-logo" href="#">
+            <img src="../../assets/logo.png" alt="" />
+          </a>
+          <div class="right-menu">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav header-menu">
+                <a class="nav-link me-3" href="#">Dịch vụ</a>
+                <a class="nav-link me-3" href="#">Dự án</a>
+                <a class="nav-link me-3" href="#">Monstarlab</a>
+                <a class="nav-link me-3" href="#">Tuyển dụng</a>
+                <a class="nav-link" href="admin.html">Admin</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    

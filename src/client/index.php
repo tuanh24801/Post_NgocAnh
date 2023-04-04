@@ -1,19 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="./node_modules/bootstrap/dist/css/bootstrap.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/ico" href="./assets/favicon.ico" />
-    <title>Post</title>
-  </head>
-  <body>
-    <div class="container p-5">
+<?php include "../header/header.php";?>
+<div class="container p-5">
       <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top navhead">
         <div class="container p-4 header">
           <a class="navbar-brand header-logo" href="#">
@@ -139,6 +125,4 @@
         </div>
       </div>
     </div>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-  </body>
-</html>
+<?php include "../footer/footer.php";?>
