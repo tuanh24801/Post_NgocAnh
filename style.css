@@ -1,8 +1,69 @@
- .right-menu {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+
+}
+.right-menu {
     padding-left: 0;
     margin-bottom: 0;
 }
 
-.navbar{
-    background-color: red;
+.header-logo img{
+    max-width: 210px;
 }
+
+.header-menu{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.main h1{
+    color: #53575a;
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+
+.main-filter{
+    justify-content: flex-end;
+}
+
+.main-btn-filter{
+    margin-left: 40px;
+    color: #53575a;
+    width: 250px;
+    height: 150px;
+}
+
+.main-btn-filter select{
+    padding: 18px 16px;
+}
+.main-btn-filter option{
+    font-size: 16px;
+}
+.post{
+    display: flex;
+    align-items: center;
+    width: 1300px;
+    height: 180px;
+    background-color: rgb(233, 233, 233);
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.post-img{
+    width: 430px;
+    height: 180px;
+}
+.post-img img{
+    width: 100%;
+}
+
+.post-content{
+    width: 100%;
+    background-color: red;
+    padding-left: 40px;
+    height: 180px;
+}
+
+/* responsive post */
