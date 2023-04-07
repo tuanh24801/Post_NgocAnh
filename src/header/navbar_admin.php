@@ -19,12 +19,9 @@
 
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav header-menu">
-              <a class="nav-link me-3" href="#">Dịch vụ</a>
-                <a class="nav-link me-3" href="#">Dự án</a>
-                <a class="nav-link me-3" href="#">Monstarlab</a>
-                <a class="nav-link me-3" href="#">Tuyển dụng</a>
-                <a class="nav-link" href="../manager/index.php">Admin</a>
-                  
+                  <a class="nav-link me-3" href="../client/index.php">Trang chủ</a>
+                  <a class="nav-link me-3" href="post_manager.php">Bài viết</a>
+                  <a class="nav-link me-3" href="index.php">Thêm bài viết</a>
               </div>
             </div>
           </div>
