@@ -1,6 +1,11 @@
 <?php 
     require "../../config/config.php";
-    $sql_get_all_post = "SELECT * FROM post";
+    $WHERE = " ";
+    if(isset($_GET['search'])){
+      $_search = $_GET['search'];
+      $WHERE = " WHERE title LIKE '%$_search%'";
+    }
+    $sql_get_all_post = "SELECT * FROM post ".$WHERE;
     $query = mysqli_query($conn,$sql_get_all_post);
     while($row = mysqli_fetch_assoc($query)){
         ?>

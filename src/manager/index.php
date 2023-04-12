@@ -43,6 +43,14 @@
                 <input type="text" class="form-control" placeholder="Nhập tiêu đề" name="title">
             </div>
             <div class="form-group">
+                <label for="category">Danh mục</label><br>
+                <select class="form-select" aria-label="Default select example" name="category">
+                  <option value="Careers" selected>Careers</option>
+                  <option value="Announcemer">Announcemer</option>
+                  <option value="Press Release">Press Release</option>
+                </select>
+            </div>
+            <div class="form-group">
                 <label for="image-title">Ảnh chủ đề</label>
                 <input type="file" class="form-control" name="img_title">
             </div>
@@ -54,7 +62,8 @@
         </form>
     </div>
 
-    <script>$(document).ready(function() {
+    <script>
+        $(document).ready(function() {
         $("#summernote").summernote({
         placeholder: 'Nội dung bài viết...',
                 height: 300,

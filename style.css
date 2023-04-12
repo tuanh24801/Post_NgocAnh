@@ -298,3 +298,50 @@ body{
 .close_comment_icon i{
     font-size: 30px;
 }
+
+.form-control:focus {
+    outline: 0 !important;
+    border-color: initial;
+    box-shadow: none;
+}
+
+.search_category{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.col_{
+    height: 90px;
+    width: 380px;
+    /* overflow: hidden; */
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.col_ select{
+    width: 200px;
+
+}
+
+.search_{
+    display: flex;
+    align-items: center;
+}
+
+.search_ input{
+    height: 48px;
+    width: 380px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.search_ button{
+    height: 49px;
+    /* margin-left: -1px; */
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    
+}

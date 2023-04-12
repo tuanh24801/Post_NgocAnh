@@ -8,18 +8,33 @@
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-md-12">
+      <div class="row search_category mb-3">
+        <div class="col_"> 
+              <div class="input-group col-md-4">
+                <form action="" method="get" class="search_">
+                  <input class="form-control py-2 border-right-0 border" type="search" name="search" id="example-search-input" 
+                  value="<?php echo (isset($_GET['search'])) ? $_GET['search'] : '' ?>">
+                  <span class="input-group-append">
+                    <button class="btn btn-outline-secondary border-left-0 border" type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                  </span>
+                </form>
+              </div>
+        </div>
+
+        <div class="col_">
           <div class="d-flex main-filter">
-            <div class="nav-item dropdown main-btn-filter p-3">
+            <div class="nav-item dropdown">
               <select
-                class="form-select form-select-md mb-3"
+                class="form-select form-select-md p-3"
                 aria-label=".form-select-lg example"
+                id="category"
               >
-                <option selected>Danh mục</option>
-                <!-- <option value="1">2021</option>
-                <option value="2">2022</option>
-                <option value="3">2023</option> -->
+                <option selected id="Careers_">Danh mục</option>
+                <option value="Careers">Careers</option>
+                <option value="Announcemer">Announcemer</option>
+                <option value="Press Release">Press Release</option>
               </select>
             </div>
           </div>
@@ -33,4 +48,13 @@
         </div>
       </div>
     </div>
+    <script>
+      $("#category").change((e) => {
+        let str = "";
+        $( "select option:selected" ).each(function() {
+          str += $( this ).text() + " ";
+        });
+        alert(str);
+      })
+    </script>
 <?php include "../footer/footer_client.php";?>
