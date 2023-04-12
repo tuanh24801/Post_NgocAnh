@@ -2,6 +2,7 @@
 <?php include "../header/navbar_client.php";?>
     <div class="container main">
 
+
       <div class="row p-5">
         <div class="col-md-12 mt-4 p-3">
           <h1>Tin tức</h1>
@@ -31,10 +32,10 @@
                 aria-label=".form-select-lg example"
                 id="category"
               >
-                <option selected id="Careers_">Danh mục</option>
-                <option value="Careers">Careers</option>
-                <option value="Announcemer">Announcemer</option>
-                <option value="Press Release">Press Release</option>
+                <option value="null" <?php echo (!isset($_GET["filter"])) ? "selected" : ""?>>Danh mục</option>
+                <option value="Careers" <?php echo (isset($_GET["filter"]) && $_GET["filter"] == "Careers") ? "selected" : ""?>>Careers</option>
+                <option value="Announcemer" <?php echo (isset($_GET["filter"]) && $_GET["filter"] == "Announcemer") ? "selected" : ""?>>Announcemer</option>
+                <option value="Press Release" <?php echo (isset($_GET["filter"]) && $_GET["filter"] == "Press Release") ? "selected" : ""?>>Press Release</option>
               </select>
             </div>
           </div>
@@ -54,7 +55,7 @@
         $( "select option:selected" ).each(function() {
           str += $( this ).text() + " ";
         });
-        alert(str);
+        window.location.href = "?filter="+str;
       })
     </script>
 <?php include "../footer/footer_client.php";?>

@@ -5,6 +5,12 @@
       $_search = $_GET['search'];
       $WHERE = " WHERE title LIKE '%$_search%'";
     }
+    if(isset($_GET["filter"])){
+      $_filter = $_GET["filter"];
+      if($_filter != "Danh mục"){
+        $WHERE = " WHERE category LIKE '%$_filter%'";
+      }
+    }
     $sql_get_all_post = "SELECT * FROM post ".$WHERE;
     $query = mysqli_query($conn,$sql_get_all_post);
     while($row = mysqli_fetch_assoc($query)){
