@@ -21,7 +21,8 @@
               <div class="navbar-nav header-menu">
               <a class="nav-link me-3" href="#">Dịch vụ</a>
                 <a class="nav-link me-3" href="#">Dự án</a>
-                <a class="nav-link me-3" href="#">Monstarlab</a>
+                <a class="nav-link me-3" href="monstarlab.php">Monstarlab</a>
+                <a class="nav-link me-3" href="index.php">Tin Tức</a>
                 <a class="nav-link me-3" href="#">Tuyển dụng</a>
                 <a class="nav-link" href="#">Liên hệ</a>
                   

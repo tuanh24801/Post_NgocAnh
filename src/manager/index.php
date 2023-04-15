@@ -1,3 +1,7 @@
+<?php 
+  session_start();
+  require "./authentication.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -26,7 +30,10 @@
               <div class="navbar-nav header-menu">
                   <a class="nav-link me-3" href="../client/index.php">Trang chủ</a>
                   <a class="nav-link me-3" href="post_manager.php">Bài viết</a>
+                  <a class="nav-link me-3" href="diendan.php">Diễn đàn</a>
+                  <a class="nav-link me-3" href="thongbao.php">Thông báo</a>
                   <a class="nav-link me-3" href="index.php">Thêm bài viết</a>
+                  <a class="nav-link me-3" href="dangxuat.php">Đăng xuất</a>
               </div>
             </div>
           </div>
@@ -36,7 +43,7 @@
 
     <div class="container">
         <h1 class="title-page">Đăng bài viết</h1>
-        <p class="text-center textnotif"><?php session_start(); echo isset($_SESSION["notif"]) ? $_SESSION["notif"] : ""; unset($_SESSION["notif"]); ?></p>
+        <p class="text-center textnotif"><?php echo isset($_SESSION["notif"]) ? $_SESSION["notif"] : ""; unset($_SESSION["notif"]); ?></p>
         <form method="post" action="handlePostAdd.php" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="title">Tiêu đề</label>

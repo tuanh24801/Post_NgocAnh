@@ -7,7 +7,7 @@ body{
 .header{
     margin-top: 0;
     background-color: #f1c40f;
-    width: 1340px;
+    width: 1320px;
     margin: auto;
     display: flex;
     flex-wrap: inherit;
@@ -31,6 +31,7 @@ body{
 .header-menu a{
     /* font-weight: bold; */
     margin-right: 20px;
+    margin-left: 7px;
     font-size: 19px;
     line-height: 22px;
     font-weight: 500;

@@ -21,7 +21,10 @@
               <div class="navbar-nav header-menu">
                   <a class="nav-link me-3" href="../client/index.php">Trang chủ</a>
                   <a class="nav-link me-3" href="post_manager.php">Bài viết</a>
+                  <a class="nav-link me-3" href="diendan.php">Diễn đàn</a>
+                  <a class="nav-link me-3" href="thongbao.php">Thông báo</a>
                   <a class="nav-link me-3" href="index.php">Thêm bài viết</a>
+                  <a class="nav-link me-3" href="dangxuat.php">Đăng xuất</a>
               </div>
             </div>
           </div>

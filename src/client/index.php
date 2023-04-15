@@ -4,7 +4,7 @@
 
 
       <div class="row p-5">
-        <div class="col-md-12 mt-4 p-3">
+        <div class="col-md-12 mt-2 p-3">
           <h1>Tin tức</h1>
         </div>
       </div>
