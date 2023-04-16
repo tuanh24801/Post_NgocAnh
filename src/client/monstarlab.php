@@ -5,6 +5,7 @@
     <div class="list-group mt-4 mb-5">
     <?php 
       require "../../config/config.php";
+      
       $sql = "SELECT * FROM notifications";
       $query = mysqli_query($conn, $sql);
       if(mysqli_num_rows($query) <= 0){
@@ -24,13 +25,35 @@
     ?>
     </div>
     <h2 class="" class="text-secondary mb-3"><b>Diễn đàn</b></h2>
-    <a href="thembaiviet.php" class=" mt-3 btn btn-warning fw-medium text-white">Thêm bài viết</a>
+    <div class="search_add_">
+        <div>
+          <a href="thembaiviet.php" class=" mt-3 btn btn-warning fw-medium text-white add_dd">Thêm bài viết</a>
+        </div>
+      
+        <div>
+          <form action="" method="get" class="search__">
+            <input class="form-control py-2 border-right-0 border" type="search" name="search" id="example-search-input" 
+            value="<?php echo (isset($_GET['search'])) ? $_GET['search'] : '' ?>">
+            <span class="input-group-append">
+              <button class="btn btn-outline-secondary border-left-0 border" type="submit">
+                  <i class="fa fa-search"></i>
+              </button>
+            </span>
+          </form>
+        </div>
+      
+    </div>
     
     <table class="table table-hover mt-4">
         <tbody>
             <?php 
                 require "../../config/config.php";
-                $sql = "SELECT * FROM forum_posts";
+                $WHERE = " ";
+                if(isset($_GET['search'])){
+                  $_search = $_GET['search'];
+                  $WHERE = " WHERE title LIKE '%$_search%'";
+                }
+                $sql = "SELECT * FROM forum_posts ".$WHERE;
                 $query = mysqli_query($conn, $sql);
                 if(mysqli_num_rows($query) <= 0){
                   echo "<p class='text-center fw-bold fs-6 text-secondary'>Không có bài viết nào</p>";

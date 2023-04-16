@@ -345,3 +345,34 @@ body{
     border-bottom-left-radius: 0px;
     
 }
+
+.search_add_{
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.search_add_ div:last-of-type{
+    margin-left: auto;
+}
+
+.add_dd{
+    display: inline;
+    align-items:flex-start;
+}
+
+.search__{
+    display: flex;
+    width: 400px;
+}
+
+.search__ button{
+    height: 41px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.search__ input{
+    height: 41px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
