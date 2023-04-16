@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 15, 2023 at 10:37 PM
+-- Generation Time: Apr 16, 2023 at 02:54 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.10
 
@@ -112,7 +112,8 @@ CREATE TABLE `forum_posts` (
 --
 
 INSERT INTO `forum_posts` (`id`, `title`, `content`, `category`, `poster`, `date`) VALUES
-(4, 'UAV Nga phối hợp pháo binh phá hủy loạt xe quân sự', 'Bộ Quốc phòng Nga đăng tải đoạn video ghi lại trận chiến ở khu vực Avdiivka, Donetsk. Theo đó, UAV t', 'Thư giãn', 'Người dùng thử đầu tiên', '2023-04-15 20:24:38');
+(4, 'UAV Nga phối hợp pháo binh phá hủy loạt xe quân sự', 'Bộ Quốc phòng Nga đăng tải đoạn video ghi lại trận chiến ở khu vực Avdiivka, Donetsk. Theo đó, UAV t', 'Thư giãn', 'Người dùng thử đầu tiên', '2023-04-15 20:24:38'),
+(5, 'Đại gia \"Đường bia\" kể cách kiếm tiền, làm khách sạn dát vàng', 'Ông Nguyễn Hữu Đường (thường được gọi là Đường \"bia\"), Chủ tịch HĐQT Công ty TNHH Hòa Bình chia sẻ, thời bao cấp thì mọi người bảo ông là người giàu nhất Hà Nội, nhưng thực tế, ông không phải là người giàu nhất Hà Nội. \r\n\r\n\"Tôi cũng không quan tâm đến người ta gọi tôi là gì nhưng từ năm 1982 cho đến bây giờ thì người ta gọi tôi là \"vua bia\", vì ở Hà Nội tôi là người phân phối tất cả bia\", ông Đường chia sẻ.', 'Giải đáp', 'NoName', '2023-04-16 12:46:59');
 
 -- --------------------------------------------------------
 
@@ -224,7 +225,7 @@ ALTER TABLE `forum_comment`
 -- AUTO_INCREMENT for table `forum_posts`
 --
 ALTER TABLE `forum_posts`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `notifications`
